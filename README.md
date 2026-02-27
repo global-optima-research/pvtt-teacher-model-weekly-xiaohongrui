@@ -14,7 +14,7 @@
 
 
 #### 💻 代码工程类 (Engineering)
-- [x] 在 SuperPod 中配置 Wan2.1 开发环境，跑通 Wan2.1 T2V 的一次推理过程 | [Log: Wan22在SuperPod中的环境配置](./week01_2026-02-16_to_2026-02-22/Wan22在SuperPod中的环境配置.md)
+- [x] 在 SuperPod 中配置 Wan2.1 开发环境，跑通 Wan2.1 T2V 的一次推理过程 | [Log: Wan22在SuperPod中的环境配置](./week01_2026-02-16_to_2026-02-22/Env_config_of_Wan22_in_SuperPod.md)
 
 #### 🧠 基础知识补全类 (Knowledge Supplement)
 - [x] 阅读 global-optima-research 各个 repo
@@ -25,15 +25,15 @@
 ### Week 2: 深入学习 Wan 和 VACE 模型
 
 #### 🔬 核心技术调研类
-- [x] 结合Wan2.1技术报告及源码，深入学习 Wan 模型 | [Note: Wan21调研-v1](./week02_2026-02-23_to_2026-03-01/Wan21调研-v1.md)
-- [x] 结合VACE论文及源码，深入学习 VACE 模型 | [Note: VACE调研-v1](./week02_2026-02-23_to_2026-03-01/VACE调研-v1.md)
+- [x] 结合Wan2.1技术报告及源码，深入学习 Wan 模型 | [Note: Wan21调研-v1](./week02_2026-02-23_to_2026-03-01/wan21-survey-v1.md)
+- [x] 结合VACE论文及源码，深入学习 VACE 模型 | [Note: VACE调研-v1](./week02_2026-02-23_to_2026-03-01/vace-survey-v1.md)
 
 #### 💻 代码工程类
 - [x] 在 5090 Server中配置好 DiffSynth Studio 环境
-- [x] 使用 DiffSynth Studio 跑通一次 Wan2.1-T2V-1.3B 的 LoRA微调全流程 | [Log: Diffsynth环境搭建及lora流程验证](./week02_2026-02-23_to_2026-03-01/Diffsynth环境搭建及lora流程验证.md)
+- [x] 使用 DiffSynth Studio 跑通一次 Wan2.1-T2V-1.3B 的 LoRA微调全流程 | [Log: Diffsynth环境搭建及lora流程验证](./week02_2026-02-23_to_2026-03-01/Diffsynth_env_setup_and_LoRa_verification.md)
 
 #### 🧠 基础知识补全类
 - [ ] 阅读 Flow matching 论文 [Flow Matching for Generative Modeling](https://arxiv.org/abs/2210.02747)
 - [ ] 阅读 Rectified Flow 论文 [Flow Straight and Fast: Learning to Generate and Transfer Data with Rectified Flow](https://arxiv.org/abs/2209.03003)
-- [x] 学习 Normalization 技术 (LayerNorm, RMSNorm, AdaLN, AdaLN-Zero) | [Note: Normalization技术](./week02_2026-02-23_to_2026-03-01/Normalization技术.md)
+- [x] 学习 Normalization 技术 (LayerNorm, RMSNorm, AdaLN, AdaLN-Zero) | [Note: Normalization技术](./week02_2026-02-23_to_2026-03-01/normalization-notes.md)
 

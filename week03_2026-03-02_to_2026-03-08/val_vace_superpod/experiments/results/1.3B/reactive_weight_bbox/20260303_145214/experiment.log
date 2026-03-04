@@ -1,0 +1,28 @@
+[2026-03-03 14:52:21] [INFO] ============================================================
+[2026-03-03 14:52:21] [INFO] 实验：Reactive 流权重调整（Bbox Mask）
+[2026-03-03 14:52:21] [INFO] ============================================================
+[2026-03-03 14:52:21] [INFO] 样本目录:    /home/hxiaoap/val_vace_superpod/samples/teapot
+[2026-03-03 14:52:21] [INFO] 输出目录:    /home/hxiaoap/val_vace_superpod/experiments/results/1.3B/reactive_weight_bbox/20260303_145214
+[2026-03-03 14:52:21] [INFO] 分辨率:      480x848
+[2026-03-03 14:52:21] [INFO] 帧数:        49
+[2026-03-03 14:52:21] [INFO] 权重列表:    [0.0]
+[2026-03-03 14:52:21] [INFO] Bbox 边距:   lr=20, top=20, bottom=20
+[2026-03-03 14:52:21] [INFO] 模型大小:    1.3B
+[2026-03-03 14:52:21] [INFO] 种子:        42
+[2026-03-03 14:52:21] [INFO] 加载数据...
+[2026-03-03 14:52:22] [INFO] 生成 bbox mask...
+[2026-03-03 14:52:22] [INFO] 已加载 49 帧，已生成 49 个 bbox mask
+[2026-03-03 14:52:22] [INFO] 加载 Wan2.1-VACE-1.3B pipeline...
+[2026-03-03 14:52:59] [INFO] Pipeline 加载完成。
+[2026-03-03 14:52:59] [INFO] 
+[2026-03-03 14:52:59] [INFO] ============================================================
+[2026-03-03 14:52:59] [INFO] 测试 Bbox Reactive Weight = 0.0
+[2026-03-03 14:52:59] [INFO] ============================================================
+[2026-03-03 14:54:18] [INFO] 已保存视频: /home/hxiaoap/val_vace_superpod/experiments/results/1.3B/reactive_weight_bbox/20260303_145214/rw_bbox_w0.0.mp4
+[2026-03-03 14:54:18] [INFO] 已保存对比帧: /home/hxiaoap/val_vace_superpod/experiments/results/1.3B/reactive_weight_bbox/20260303_145214/rw_bbox_w0.0_comparison.jpg
+[2026-03-03 14:54:18] [INFO] 已保存首末帧展示: /home/hxiaoap/val_vace_superpod/experiments/results/1.3B/reactive_weight_bbox/20260303_145214/rw_bbox_w0.0_showcase.jpg
+[2026-03-03 14:54:18] [INFO] 
+[2026-03-03 14:54:18] [INFO] ============================================================
+[2026-03-03 14:54:18] [INFO] 实验完成！
+[2026-03-03 14:54:18] [INFO] 输出目录: /home/hxiaoap/val_vace_superpod/experiments/results/1.3B/reactive_weight_bbox/20260303_145214
+[2026-03-03 14:54:18] [INFO] ============================================================

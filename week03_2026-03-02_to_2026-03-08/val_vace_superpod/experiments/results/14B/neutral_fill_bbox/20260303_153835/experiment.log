@@ -1,0 +1,33 @@
+[2026-03-03 15:38:43] [INFO] ============================================================
+[2026-03-03 15:38:43] [INFO] 实验：中性色填充 + Bbox Mask → 商品替换
+[2026-03-03 15:38:43] [INFO] ============================================================
+[2026-03-03 15:38:43] [INFO] 样本目录:    /home/hxiaoap/val_vace_superpod/samples/teapot
+[2026-03-03 15:38:43] [INFO] 输出目录:    /home/hxiaoap/val_vace_superpod/experiments/results/14B/neutral_fill_bbox/20260303_153835
+[2026-03-03 15:38:43] [INFO] 分辨率:      480x848
+[2026-03-03 15:38:43] [INFO] 帧数:        49
+[2026-03-03 15:38:43] [INFO] 模型大小:    14B
+[2026-03-03 15:38:43] [INFO] 种子:        42
+[2026-03-03 15:38:43] [INFO] 填充值:      128
+[2026-03-03 15:38:43] [INFO] Bbox 边距:   lr=20, top=20, bottom=20
+[2026-03-03 15:38:43] [INFO] 提示词:      yellow rubber duck toy, product display, studio lighting
+[2026-03-03 15:38:43] [INFO] 加载数据...
+[2026-03-03 15:38:44] [INFO] 已加载 49 帧视频、49 个 mask、参考图: ref_rubber_duck.png
+[2026-03-03 15:38:44] [INFO] 从精确 mask 生成 bbox mask...
+[2026-03-03 15:38:44] [INFO] Bbox mask 生成完成。
+[2026-03-03 15:38:44] [INFO] 对输入帧 bbox mask 区域进行中性色填充（fill_value=128）...
+[2026-03-03 15:38:44] [INFO] 中性色填充完成。
+[2026-03-03 15:38:44] [INFO] 已保存预处理对比图: /home/hxiaoap/val_vace_superpod/experiments/results/14B/neutral_fill_bbox/20260303_153835/preprocess_comparison.jpg
+[2026-03-03 15:38:44] [INFO] 加载 Wan2.1-VACE-14B pipeline...
+[2026-03-03 15:39:41] [INFO] Pipeline 加载完成。
+[2026-03-03 15:39:41] [INFO] 
+[2026-03-03 15:39:41] [INFO] ============================================================
+[2026-03-03 15:39:41] [INFO] 执行: 中性色填充帧 + bbox mask + 参考图像
+[2026-03-03 15:39:41] [INFO] ============================================================
+[2026-03-03 15:44:37] [INFO] 已保存视频: /home/hxiaoap/val_vace_superpod/experiments/results/14B/neutral_fill_bbox/20260303_153835/neutral_fill_bbox.mp4
+[2026-03-03 15:44:37] [INFO] 已保存对比帧: /home/hxiaoap/val_vace_superpod/experiments/results/14B/neutral_fill_bbox/20260303_153835/neutral_fill_bbox_comparison.jpg
+[2026-03-03 15:44:37] [INFO] 已保存首末帧展示: /home/hxiaoap/val_vace_superpod/experiments/results/14B/neutral_fill_bbox/20260303_153835/neutral_fill_bbox_showcase.jpg
+[2026-03-03 15:44:37] [INFO] 
+[2026-03-03 15:44:37] [INFO] ============================================================
+[2026-03-03 15:44:37] [INFO] 实验完成！
+[2026-03-03 15:44:37] [INFO] 输出目录: /home/hxiaoap/val_vace_superpod/experiments/results/14B/neutral_fill_bbox/20260303_153835
+[2026-03-03 15:44:37] [INFO] ============================================================

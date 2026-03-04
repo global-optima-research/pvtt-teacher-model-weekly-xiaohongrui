@@ -1,0 +1,35 @@
+[2026-03-03 14:59:34] [INFO] ============================================================
+[2026-03-03 14:59:34] [INFO] 实验：中性色填充 + GrowMask + BlockifyMask → 商品替换
+[2026-03-03 14:59:34] [INFO] ============================================================
+[2026-03-03 14:59:34] [INFO] 样本目录:        /home/hxiaoap/val_vace_superpod/samples/teapot
+[2026-03-03 14:59:34] [INFO] 输出目录:        /home/hxiaoap/val_vace_superpod/experiments/results/1.3B/neutral_fill_growmask/20260303_145927
+[2026-03-03 14:59:34] [INFO] 分辨率:          480x848
+[2026-03-03 14:59:34] [INFO] 帧数:            49
+[2026-03-03 14:59:34] [INFO] 模型大小:        1.3B
+[2026-03-03 14:59:34] [INFO] 种子:            42
+[2026-03-03 14:59:34] [INFO] 填充值:          128
+[2026-03-03 14:59:34] [INFO] Mask 膨胀像素:   10
+[2026-03-03 14:59:34] [INFO] Mask 网格大小:   32
+[2026-03-03 14:59:34] [INFO] 提示词:          yellow rubber duck toy, product display, studio lighting
+[2026-03-03 14:59:34] [INFO] 加载数据...
+[2026-03-03 14:59:35] [INFO] 已加载 49 帧视频、49 个 mask、参考图: ref_rubber_duck.png
+[2026-03-03 14:59:35] [INFO] Mask 预处理：GrowMask(10px) + BlockifyMask(32px)...
+[2026-03-03 14:59:44] [INFO] Mask 预处理完成。
+[2026-03-03 14:59:44] [INFO] 已保存 mask 对比图: /home/hxiaoap/val_vace_superpod/experiments/results/1.3B/neutral_fill_growmask/20260303_145927/mask_comparison.jpg
+[2026-03-03 14:59:44] [INFO] 对输入帧处理后 mask 区域进行中性色填充（fill_value=128）...
+[2026-03-03 14:59:45] [INFO] 中性色填充完成。
+[2026-03-03 14:59:45] [INFO] 已保存预处理对比图: /home/hxiaoap/val_vace_superpod/experiments/results/1.3B/neutral_fill_growmask/20260303_145927/preprocess_comparison.jpg
+[2026-03-03 14:59:45] [INFO] 加载 Wan2.1-VACE-1.3B pipeline...
+[2026-03-03 15:00:11] [INFO] Pipeline 加载完成。
+[2026-03-03 15:00:11] [INFO] 
+[2026-03-03 15:00:11] [INFO] ============================================================
+[2026-03-03 15:00:11] [INFO] 执行: 中性色填充帧 + Grow+Blockify mask + 参考图像
+[2026-03-03 15:00:11] [INFO] ============================================================
+[2026-03-03 15:01:30] [INFO] 已保存视频: /home/hxiaoap/val_vace_superpod/experiments/results/1.3B/neutral_fill_growmask/20260303_145927/neutral_fill_growmask.mp4
+[2026-03-03 15:01:30] [INFO] 已保存对比帧: /home/hxiaoap/val_vace_superpod/experiments/results/1.3B/neutral_fill_growmask/20260303_145927/neutral_fill_growmask_comparison.jpg
+[2026-03-03 15:01:30] [INFO] 已保存首末帧展示: /home/hxiaoap/val_vace_superpod/experiments/results/1.3B/neutral_fill_growmask/20260303_145927/neutral_fill_growmask_showcase.jpg
+[2026-03-03 15:01:30] [INFO] 
+[2026-03-03 15:01:30] [INFO] ============================================================
+[2026-03-03 15:01:30] [INFO] 实验完成！
+[2026-03-03 15:01:30] [INFO] 输出目录: /home/hxiaoap/val_vace_superpod/experiments/results/1.3B/neutral_fill_growmask/20260303_145927
+[2026-03-03 15:01:30] [INFO] ============================================================

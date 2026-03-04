@@ -1,0 +1,73 @@
+[2026-03-04 10:39:49] [INFO] ============================================================
+[2026-03-04 10:39:49] [INFO] 实验：1:1 复刻 ComfyUI VACE 商品替换工作流
+[2026-03-04 10:39:49] [INFO] ============================================================
+[2026-03-04 10:39:49] [INFO] 样本目录:          /home/hxiaoap/val_vace_superpod/samples/teapot
+[2026-03-04 10:39:49] [INFO] 输出目录:          /home/hxiaoap/val_vace_superpod/experiments/results/14B/comfyui_baseline/20260304_103939
+[2026-03-04 10:39:49] [INFO] 分辨率:            480x848
+[2026-03-04 10:39:49] [INFO] 帧数:              49
+[2026-03-04 10:39:49] [INFO] 模型大小:          14B
+[2026-03-04 10:39:49] [INFO] 种子:              42
+[2026-03-04 10:39:49] [INFO] LoRA 路径:         /home/hxiaoap/val_vace_superpod/models/LightX2V/Wan21_T2V_14B_lightx2v_cfg_step_distill_lora_rank32.safetensors
+[2026-03-04 10:39:49] [INFO] LoRA 强度:         1.0
+[2026-03-04 10:39:49] [INFO] 采样步数:          1
+[2026-03-04 10:39:49] [INFO] CFG:               6.0
+[2026-03-04 10:39:49] [INFO] CFG Star:          5.0
+[2026-03-04 10:39:49] [INFO] 填充值:            128
+[2026-03-04 10:39:49] [INFO] Mask 膨胀像素:     10
+[2026-03-04 10:39:49] [INFO] Mask 网格大小:     32
+[2026-03-04 10:39:49] [INFO] 参考图去背景模型:  birefnet-general
+[2026-03-04 10:39:49] [INFO] 提示词:            yellow rubber duck toy, product display, studio lighting
+[2026-03-04 10:39:49] [INFO] 负面提示词:        low quality, blurry, deformed
+[2026-03-04 10:39:49] [INFO] 
+[2026-03-04 10:39:49] [INFO] 加载数据...
+[2026-03-04 10:39:50] [INFO] 已加载 49 帧视频、49 个 mask、参考图: ref_rubber_duck.png
+[2026-03-04 10:39:50] [INFO] 
+[2026-03-04 10:39:50] [INFO] ============================================================
+[2026-03-04 10:39:50] [INFO] 路径 A：参考图去背景
+[2026-03-04 10:39:50] [INFO] ============================================================
+[2026-03-04 10:39:59] [INFO] 使用 birefnet-general 模型去除参考图背景。
+[2026-03-04 10:39:59] [INFO] 已保存参考图对比: /home/hxiaoap/val_vace_superpod/experiments/results/14B/comfyui_baseline/20260304_103939/ref_comparison.jpg
+[2026-03-04 10:39:59] [INFO] 
+[2026-03-04 10:39:59] [INFO] ============================================================
+[2026-03-04 10:39:59] [INFO] 路径 C：Mask 预处理 GrowMask(10px) + BlockifyMask(32px)
+[2026-03-04 10:39:59] [INFO] ============================================================
+[2026-03-04 10:40:09] [INFO] Mask 预处理完成。
+[2026-03-04 10:40:09] [INFO] 已保存 mask 对比图: /home/hxiaoap/val_vace_superpod/experiments/results/14B/comfyui_baseline/20260304_103939/mask_comparison.jpg
+[2026-03-04 10:40:09] [INFO] 
+[2026-03-04 10:40:09] [INFO] ============================================================
+[2026-03-04 10:40:09] [INFO] 路径 B：输入帧 mask 区域中性色填充 (fill_value=128)
+[2026-03-04 10:40:09] [INFO] ============================================================
+[2026-03-04 10:40:09] [INFO] 中性色填充完成。
+[2026-03-04 10:40:09] [INFO] 已保存预处理对比图: /home/hxiaoap/val_vace_superpod/experiments/results/14B/comfyui_baseline/20260304_103939/preprocess_comparison.jpg
+[2026-03-04 10:40:09] [INFO] 
+[2026-03-04 10:40:09] [INFO] ============================================================
+[2026-03-04 10:40:09] [INFO] 加载 Wan2.1-VACE-14B Pipeline
+[2026-03-04 10:40:09] [INFO] ============================================================
+[2026-03-04 10:42:42] [INFO] Pipeline 加载完成。
+[2026-03-04 10:42:42] [INFO] 
+[2026-03-04 10:42:42] [INFO] ============================================================
+[2026-03-04 10:42:42] [INFO] 加载 LightX2V 蒸馏 LoRA
+[2026-03-04 10:42:42] [INFO] ============================================================
+[2026-03-04 10:42:42] [INFO] 加载 LoRA: Wan21_T2V_14B_lightx2v_cfg_step_distill_lora_rank32.safetensors (strength=1.0)
+[2026-03-04 10:42:42] [INFO] pipe.load_lora() 失败: BasePipeline.load_lora() got an unexpected keyword argument 'strength'
+[2026-03-04 10:42:42] [INFO] LoRA 文件包含 1457 个张量。
+[2026-03-04 10:42:42] [INFO] 找到 denoising model: pipe.dit
+[2026-03-04 10:42:42] [INFO] 模型包含 1095 个参数。
+[2026-03-04 10:42:42] [INFO] 识别到 405 个 LoRA 层对，0 个 alpha 值。
+[2026-03-04 10:42:42] [INFO] LoRA 样例 base key: ['diffusion_model.blocks.0.cross_attn.k', 'diffusion_model.blocks.0.cross_attn.o', 'diffusion_model.blocks.0.cross_attn.q']
+[2026-03-04 10:42:42] [INFO] 模型样例 key: ['blocks.0.cross_attn.k.bias', 'blocks.0.cross_attn.k.weight', 'blocks.0.cross_attn.norm_k.weight']
+[2026-03-04 10:43:01] [INFO] 已合并 405 个 LoRA 层，跳过 0 个。
+[2026-03-04 10:43:01] [INFO] 
+[2026-03-04 10:43:01] [INFO] ============================================================
+[2026-03-04 10:43:01] [INFO] 执行推理: 中性色填充帧 + Grow+Block mask + 去背景参考图
+[2026-03-04 10:43:01] [INFO]   steps=1, cfg=6.0, cfg_star=5.0, LoRA=YES
+[2026-03-04 10:43:01] [INFO] ============================================================
+[2026-03-04 10:43:16] [INFO] 已保存视频: /home/hxiaoap/val_vace_superpod/experiments/results/14B/comfyui_baseline/20260304_103939/comfyui_baseline.mp4
+[2026-03-04 10:43:16] [INFO] 已保存对比帧: /home/hxiaoap/val_vace_superpod/experiments/results/14B/comfyui_baseline/20260304_103939/comfyui_baseline_comparison.jpg
+[2026-03-04 10:43:16] [INFO] 已保存首末帧展示: /home/hxiaoap/val_vace_superpod/experiments/results/14B/comfyui_baseline/20260304_103939/comfyui_baseline_showcase.jpg
+[2026-03-04 10:43:16] [INFO] 
+[2026-03-04 10:43:16] [INFO] ============================================================
+[2026-03-04 10:43:16] [INFO] 实验完成！
+[2026-03-04 10:43:16] [INFO] LoRA 状态: 已加载
+[2026-03-04 10:43:16] [INFO] 输出目录: /home/hxiaoap/val_vace_superpod/experiments/results/14B/comfyui_baseline/20260304_103939
+[2026-03-04 10:43:16] [INFO] ============================================================

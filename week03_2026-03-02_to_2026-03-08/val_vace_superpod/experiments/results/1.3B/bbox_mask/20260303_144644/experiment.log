@@ -1,0 +1,36 @@
+[2026-03-03 14:46:51] [INFO] ============================================================
+[2026-03-03 14:46:51] [INFO] 实验：Bbox Mask vs 精确 Mask 对比
+[2026-03-03 14:46:51] [INFO] ============================================================
+[2026-03-03 14:46:51] [INFO] 样本目录:    /home/hxiaoap/val_vace_superpod/samples/teapot
+[2026-03-03 14:46:51] [INFO] 输出目录:    /home/hxiaoap/val_vace_superpod/experiments/results/1.3B/bbox_mask/20260303_144644
+[2026-03-03 14:46:51] [INFO] 分辨率:      480x848
+[2026-03-03 14:46:51] [INFO] 帧数:        49
+[2026-03-03 14:46:51] [INFO] Bbox 边距:   lr=20, top=20, bottom=20
+[2026-03-03 14:46:51] [INFO] 模型大小:    1.3B
+[2026-03-03 14:46:51] [INFO] 种子:        42
+[2026-03-03 14:46:51] [INFO] 加载数据...
+[2026-03-03 14:46:52] [INFO] 已加载 49 帧、49 个 mask
+[2026-03-03 14:46:52] [INFO] 生成 bbox mask...
+[2026-03-03 14:46:52] [INFO] 已保存 mask 对比图（第 0 帧）。
+[2026-03-03 14:46:52] [INFO] 加载 Wan2.1-VACE-1.3B pipeline...
+[2026-03-03 14:47:29] [INFO] Pipeline 加载完成。
+[2026-03-03 14:47:29] [INFO] 
+[2026-03-03 14:47:29] [INFO] ==================================================
+[2026-03-03 14:47:29] [INFO] 实验组 1: Bbox Mask + 参考图像
+[2026-03-03 14:47:29] [INFO] ==================================================
+[2026-03-03 14:48:48] [INFO] 已保存视频: /home/hxiaoap/val_vace_superpod/experiments/results/1.3B/bbox_mask/20260303_144644/bbox_mask.mp4
+[2026-03-03 14:48:48] [INFO] 已保存对比帧: /home/hxiaoap/val_vace_superpod/experiments/results/1.3B/bbox_mask/20260303_144644/bbox_mask_comparison.jpg
+[2026-03-03 14:48:48] [INFO] 已保存首末帧展示: /home/hxiaoap/val_vace_superpod/experiments/results/1.3B/bbox_mask/20260303_144644/bbox_mask_showcase.jpg
+[2026-03-03 14:48:48] [INFO] 
+[2026-03-03 14:48:48] [INFO] ==================================================
+[2026-03-03 14:48:48] [INFO] 对照组 2: 精确 Mask + 参考图像
+[2026-03-03 14:48:48] [INFO] ==================================================
+[2026-03-03 14:50:07] [INFO] 已保存视频: /home/hxiaoap/val_vace_superpod/experiments/results/1.3B/bbox_mask/20260303_144644/precise_mask.mp4
+[2026-03-03 14:50:07] [INFO] 已保存对比帧: /home/hxiaoap/val_vace_superpod/experiments/results/1.3B/bbox_mask/20260303_144644/precise_mask_comparison.jpg
+[2026-03-03 14:50:07] [INFO] 已保存首末帧展示: /home/hxiaoap/val_vace_superpod/experiments/results/1.3B/bbox_mask/20260303_144644/precise_mask_showcase.jpg
+[2026-03-03 14:50:07] [INFO] 已保存并排对比图（第 24 帧）。
+[2026-03-03 14:50:07] [INFO] 
+[2026-03-03 14:50:07] [INFO] ============================================================
+[2026-03-03 14:50:07] [INFO] 实验完成！
+[2026-03-03 14:50:07] [INFO] 输出目录: /home/hxiaoap/val_vace_superpod/experiments/results/1.3B/bbox_mask/20260303_144644
+[2026-03-03 14:50:07] [INFO] ============================================================

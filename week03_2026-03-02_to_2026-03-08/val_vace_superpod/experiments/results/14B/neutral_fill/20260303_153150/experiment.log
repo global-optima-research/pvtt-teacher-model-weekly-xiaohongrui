@@ -1,0 +1,30 @@
+[2026-03-03 15:31:57] [INFO] ============================================================
+[2026-03-03 15:31:57] [INFO] 实验：中性色填充 + 精确 Mask → 商品替换
+[2026-03-03 15:31:57] [INFO] ============================================================
+[2026-03-03 15:31:57] [INFO] 样本目录:  /home/hxiaoap/val_vace_superpod/samples/teapot
+[2026-03-03 15:31:57] [INFO] 输出目录:  /home/hxiaoap/val_vace_superpod/experiments/results/14B/neutral_fill/20260303_153150
+[2026-03-03 15:31:57] [INFO] 分辨率:    480x848
+[2026-03-03 15:31:57] [INFO] 帧数:      49
+[2026-03-03 15:31:57] [INFO] 模型大小:  14B
+[2026-03-03 15:31:57] [INFO] 种子:      42
+[2026-03-03 15:31:57] [INFO] 填充值:    128
+[2026-03-03 15:31:57] [INFO] 提示词:    yellow rubber duck toy, product display, studio lighting
+[2026-03-03 15:31:57] [INFO] 加载数据...
+[2026-03-03 15:31:58] [INFO] 已加载 49 帧视频、49 个 mask、参考图: ref_rubber_duck.png
+[2026-03-03 15:31:58] [INFO] 对输入帧 mask 区域进行中性色填充（fill_value=128）...
+[2026-03-03 15:31:58] [INFO] 中性色填充完成。
+[2026-03-03 15:31:58] [INFO] 已保存预处理对比图: /home/hxiaoap/val_vace_superpod/experiments/results/14B/neutral_fill/20260303_153150/preprocess_comparison.jpg
+[2026-03-03 15:31:58] [INFO] 加载 Wan2.1-VACE-14B pipeline...
+[2026-03-03 15:33:38] [INFO] Pipeline 加载完成。
+[2026-03-03 15:33:38] [INFO] 
+[2026-03-03 15:33:38] [INFO] ============================================================
+[2026-03-03 15:33:38] [INFO] 执行: 中性色填充帧 + 精确 mask + 参考图像
+[2026-03-03 15:33:38] [INFO] ============================================================
+[2026-03-03 15:38:34] [INFO] 已保存视频: /home/hxiaoap/val_vace_superpod/experiments/results/14B/neutral_fill/20260303_153150/neutral_fill.mp4
+[2026-03-03 15:38:34] [INFO] 已保存对比帧: /home/hxiaoap/val_vace_superpod/experiments/results/14B/neutral_fill/20260303_153150/neutral_fill_comparison.jpg
+[2026-03-03 15:38:34] [INFO] 已保存首末帧展示: /home/hxiaoap/val_vace_superpod/experiments/results/14B/neutral_fill/20260303_153150/neutral_fill_showcase.jpg
+[2026-03-03 15:38:34] [INFO] 
+[2026-03-03 15:38:34] [INFO] ============================================================
+[2026-03-03 15:38:34] [INFO] 实验完成！
+[2026-03-03 15:38:34] [INFO] 输出目录: /home/hxiaoap/val_vace_superpod/experiments/results/14B/neutral_fill/20260303_153150
+[2026-03-03 15:38:34] [INFO] ============================================================

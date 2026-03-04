@@ -38,3 +38,21 @@
 - [ ] 阅读 Rectified Flow 论文 [Flow Straight and Fast: Learning to Generate and Transfer Data with Rectified Flow](https://arxiv.org/abs/2209.03003)
 - [x] 学习 Normalization 技术 (LayerNorm, RMSNorm, AdaLN, AdaLN-Zero) | [Note: Normalization技术](./week02_2026-02-23_to_2026-03-01/normalization-notes.md)
 
+---
+
+### Week 3: 深入探索 VACE 模型能力边界
+
+#### 🔬 核心技术调研类
+- [x] 阅读 Wan-Animate 论文 [Wan-Animate: Unified Character Animation and Replacement with Holistic Replication](https://arxiv.org/abs/2509.14055)
+- [x] 结合源码，继续深入学习 wan 系列模型  | [Note: Wan系列模型深度调研文档-v1](./week03_2026-03-02_to_2026-03-08/Wan系列模型深度调研文档.md)
+- [ ] 整理大模型微调技术调研路线
+- [ ] 整理保持“主体一致性”技术调研路线
+
+#### 💻 代码工程类
+- [x] 继续探究 VACE 模型能力边界 | [Code & Log: 实验代码及实验记录](./week03_2026-03-02_to_2026-03-08/val_vace_superpod/)
+
+#### 🧠 基础知识补全类
+
+
+
+

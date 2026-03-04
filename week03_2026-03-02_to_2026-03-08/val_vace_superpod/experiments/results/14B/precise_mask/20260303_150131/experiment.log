@@ -1,0 +1,26 @@
+[2026-03-03 15:01:38] [INFO] ============================================================
+[2026-03-03 15:01:38] [INFO] 实验：精确 Mask + 参考图像 → 商品替换
+[2026-03-03 15:01:38] [INFO] ============================================================
+[2026-03-03 15:01:38] [INFO] 样本目录:  /home/hxiaoap/val_vace_superpod/samples/teapot
+[2026-03-03 15:01:38] [INFO] 输出目录:  /home/hxiaoap/val_vace_superpod/experiments/results/14B/precise_mask/20260303_150131
+[2026-03-03 15:01:38] [INFO] 分辨率:    480x848
+[2026-03-03 15:01:38] [INFO] 帧数:      49
+[2026-03-03 15:01:38] [INFO] 模型大小:  14B
+[2026-03-03 15:01:38] [INFO] 种子:      42
+[2026-03-03 15:01:38] [INFO] 提示词:    yellow rubber duck toy, product display, studio lighting
+[2026-03-03 15:01:38] [INFO] 加载数据...
+[2026-03-03 15:01:38] [INFO] 已加载 49 帧视频、49 个 mask、参考图: ref_rubber_duck.png
+[2026-03-03 15:01:38] [INFO] 加载 Wan2.1-VACE-14B pipeline...
+[2026-03-03 15:03:35] [INFO] Pipeline 加载完成。
+[2026-03-03 15:03:35] [INFO] 
+[2026-03-03 15:03:35] [INFO] ============================================================
+[2026-03-03 15:03:35] [INFO] 执行: source video + precise mask + reference image
+[2026-03-03 15:03:35] [INFO] ============================================================
+[2026-03-03 15:08:31] [INFO] 已保存视频: /home/hxiaoap/val_vace_superpod/experiments/results/14B/precise_mask/20260303_150131/precise_mask.mp4
+[2026-03-03 15:08:31] [INFO] 已保存对比帧: /home/hxiaoap/val_vace_superpod/experiments/results/14B/precise_mask/20260303_150131/precise_mask_comparison.jpg
+[2026-03-03 15:08:31] [INFO] 已保存首末帧展示: /home/hxiaoap/val_vace_superpod/experiments/results/14B/precise_mask/20260303_150131/precise_mask_showcase.jpg
+[2026-03-03 15:08:31] [INFO] 
+[2026-03-03 15:08:31] [INFO] ============================================================
+[2026-03-03 15:08:31] [INFO] 实验完成！
+[2026-03-03 15:08:31] [INFO] 输出目录: /home/hxiaoap/val_vace_superpod/experiments/results/14B/precise_mask/20260303_150131
+[2026-03-03 15:08:31] [INFO] ============================================================

@@ -45,6 +45,14 @@
 #### 🔬 核心技术调研类
 - [x] 阅读 Wan-Animate 论文 [Wan-Animate: Unified Character Animation and Replacement with Holistic Replication](https://arxiv.org/abs/2509.14055)
 - [x] 结合源码，继续深入学习 wan 系列模型  | [Note: Wan系列模型深度调研文档-v1](./week03_2026-03-02_to_2026-03-08/Wan系列模型深度调研文档.md)
+- [x] 阅读“图像条件注入”的相关重要论文
+  - [x] 阅读 ControlNet 论文 [Adding Conditional Control to Text-to-Image Diffusion Models](https://arxiv.org/abs/2302.05543)
+  - [x] 阅读 T2I-Adapter 论文 [T2I-Adapter: Learning Adapters to Dig out More Controllable Ability for Text-to-Image Diffusion Models](arxiv.org/abs/2302.08453)
+  - [x] 阅读 IP-Adapter 论文 [IP-Adapter: Text Compatible Image Prompt Adapter for Text-to-Image Diffusion Models](https://arxiv.org/abs/2308.06721)
+  - [x] 阅读 Uni-ControlNet 论文 [Uni-ControlNet: All-in-One Control to Text-to-Image Diffusion Models](https://arxiv.org/abs/2305.16322)
+  - [x] 阅读 ControlNet++ 论文 [ControlNet++: Improving Conditional Controls with Efficient Consistency Feedback](https://arxiv.org/abs/2404.07987)
+  - [x] 阅读 Ctrl-Adapter 论文[Ctrl-Adapter: An Efficient and Versatile Framework for Adapting Diverse Controls to Any Diffusion Model](https://arxiv.org/abs/2404.09967)
+
 - [ ] 整理大模型微调技术调研路线
 - [ ] 整理保持“主体一致性”技术调研路线
 

@@ -34,6 +34,17 @@
 **额外依赖**：`pip install rembg[gpu] safetensors`
 **额外模型**：`models/LightX2V/Wan21_T2V_14B_lightx2v_cfg_step_distill_lora_rank32.safetensors`（LoRA 仅兼容 14B 模型）
 
+### 第四轮实验（Canny 结构控制）
+
+利用参考图像的 Canny 边缘作为结构控制信号，引导模型按照目标物体的轮廓生成替换内容。
+
+| Shell 脚本 | Python 脚本 | 说明 |
+|---|---|---|
+| `run_canny_control.sh` | `exp_canny_control.py` | 双参考图：给 VACE 同时传入商品图 + Canny 结构图作为参考（输入帧保持标准中性色填充） |
+| `run_canny_paste.sh` | `exp_canny_paste.py` | Canny 首帧粘贴：仅首帧 mask 区域嵌入 Canny 边缘，白色/黑色两个变体依次运行 |
+
+**额外依赖**：`pip install opencv-python-headless`（通常已随 DiffSynth-Studio 安装）
+
 ## 快速开始
 
 ```bash
@@ -200,6 +211,20 @@ python exp_neutral_fill.py --help
 | `GROW_PIXELS` | `--grow_pixels` | `10` | Mask 膨胀像素数 |
 | `BLOCK_SIZE` | `--block_size` | `32` | Mask 网格对齐块大小 |
 
+### Canny 结构控制实验专有参数
+
+| 环境变量 | CLI 参数 | 默认值 | 说明 |
+|---|---|---|---|
+| `CANNY_LOW` | `--canny_low` | `50` | Canny 边缘检测低阈值 |
+| `CANNY_HIGH` | `--canny_high` | `150` | Canny 边缘检测高阈值 |
+| `NO_REMBG` | `--no_rembg` | `0`（启用） | 设为 `1` 禁用 rembg 前景分割，回退到亮度阈值去背景 |
+| `BG_THRESHOLD` | `--bg_threshold` | `240` | 亮度阈值回退方案：RGB 均 > 此值视为背景（仅 rembg 不可用时生效） |
+| `BLUR_KSIZE` | `--blur_ksize` | `3` | Canny 前高斯模糊核大小（0 = 不模糊） |
+
+> **Canny 前景分割**：默认使用 rembg 神经网络精确分离产品前景，去除背景和阴影后再提取 Canny 边缘。rembg 不可用时自动回退到基于 `BG_THRESHOLD` 的亮度阈值方案。
+>
+> `canny_paste` 实验在同一次运行中依次产出白色线条和黑色线条两组结果，无需手动指定颜色。
+
 ### ComfyUI 复刻实验专有参数
 
 | 环境变量 | CLI 参数 | 默认值 | 说明 |
@@ -302,6 +327,8 @@ val_vace_superpod/
   |    |- exp_neutral_fill_bbox.py         # 中性色填充 + bbox mask 实验
   |    |- exp_neutral_fill_growmask.py     # 中性色填充 + GrowMask + BlockifyMask 实验
   |    |- exp_comfyui_baseline.py          # ComfyUI 工作流 1:1 复刻实验
+  |    |- exp_canny_control.py            # 双参考图（商品图+Canny）实验
+  |    |- exp_canny_paste.py              # Canny 首帧粘贴（白/黑对比）实验
   |    |- test_*.py                        # （旧版脚本，已被 exp_*.py 取代）
   |- scripts/
   |    |- run_precise_mask.sh
@@ -312,6 +339,8 @@ val_vace_superpod/
   |    |- run_neutral_fill_bbox.sh
   |    |- run_neutral_fill_growmask.sh
   |    |- run_comfyui_baseline.sh          # ComfyUI 工作流复刻
+  |    |- run_canny_control.sh             # 双参考图（商品图+Canny）
+  |    |- run_canny_paste.sh               # Canny 首帧粘贴（白/黑）
   |    |- extract_bbox_sequence.py
   |    |- sync_to_server.sh
   |    |- README.md                        # 本文档

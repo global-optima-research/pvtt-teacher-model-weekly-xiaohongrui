@@ -1,0 +1,66 @@
+[2026-03-09 09:42:39] [INFO] ============================================================
+[2026-03-09 09:42:39] [INFO] 实验：Canny 首帧粘贴（白线/黑线对比）→ 商品替换
+[2026-03-09 09:42:39] [INFO] ============================================================
+[2026-03-09 09:42:39] [INFO] 样本目录:          /home/hxiaoap/val_vace_superpod/samples/teapot
+[2026-03-09 09:42:39] [INFO] 输出目录:          /home/hxiaoap/val_vace_superpod/experiments/results/1.3B/canny_paste/20260309_094232
+[2026-03-09 09:42:39] [INFO] 分辨率:            480x848
+[2026-03-09 09:42:39] [INFO] 帧数:              49
+[2026-03-09 09:42:39] [INFO] 模型大小:          1.3B
+[2026-03-09 09:42:39] [INFO] 种子:              42
+[2026-03-09 09:42:39] [INFO] 填充值:            128
+[2026-03-09 09:42:39] [INFO] Mask 膨胀像素:     10
+[2026-03-09 09:42:39] [INFO] Mask 网格大小:     32
+[2026-03-09 09:42:39] [INFO] Canny 阈值:        low=50, high=150
+[2026-03-09 09:42:39] [INFO] 背景阈值:          240
+[2026-03-09 09:42:39] [INFO] 高斯模糊核:        3
+[2026-03-09 09:42:39] [INFO] rembg 前景分割:    启用（优先）
+[2026-03-09 09:42:39] [INFO] 提示词:            yellow rubber duck toy, product display, studio lighting
+[2026-03-09 09:42:39] [INFO] 负面提示词:        low quality, blurry, deformed
+[2026-03-09 09:42:39] [INFO] 
+[2026-03-09 09:42:39] [INFO] 加载数据...
+[2026-03-09 09:42:40] [INFO] 已加载 49 帧视频、49 个 mask、参考图: ref_rubber_duck.png
+[2026-03-09 09:42:40] [INFO] 
+[2026-03-09 09:42:40] [INFO] ============================================================
+[2026-03-09 09:42:40] [INFO] 生成参考图 Canny 边缘图
+[2026-03-09 09:42:40] [INFO] ============================================================
+[2026-03-09 09:42:44] [INFO] rembg 前景分割成功（背景+阴影已移除）
+[2026-03-09 09:42:44] [INFO] Canny 尺寸: (512, 512), 边缘像素: 3176
+[2026-03-09 09:42:44] [INFO] 已保存参考图 Canny 边缘图: /home/hxiaoap/val_vace_superpod/experiments/results/1.3B/canny_paste/20260309_094232/ref_canny.png
+[2026-03-09 09:42:44] [INFO] 
+[2026-03-09 09:42:44] [INFO] ============================================================
+[2026-03-09 09:42:44] [INFO] Mask 预处理：GrowMask(10px) + BlockifyMask(32px)
+[2026-03-09 09:42:44] [INFO] ============================================================
+[2026-03-09 09:42:54] [INFO] Mask 预处理完成。
+[2026-03-09 09:42:54] [INFO] 已保存 mask 对比图: /home/hxiaoap/val_vace_superpod/experiments/results/1.3B/canny_paste/20260309_094232/mask_comparison.jpg
+[2026-03-09 09:42:54] [INFO] 已保存预处理对比图: /home/hxiaoap/val_vace_superpod/experiments/results/1.3B/canny_paste/20260309_094232/preprocess_comparison.jpg
+[2026-03-09 09:42:54] [INFO] 
+[2026-03-09 09:42:54] [INFO] ============================================================
+[2026-03-09 09:42:54] [INFO] 加载 Wan2.1-VACE-1.3B Pipeline
+[2026-03-09 09:42:54] [INFO] ============================================================
+[2026-03-09 09:43:14] [INFO] Pipeline 加载完成。
+[2026-03-09 09:43:14] [INFO] 
+[2026-03-09 09:43:14] [INFO] ============================================================
+[2026-03-09 09:43:14] [INFO] 变体：white
+[2026-03-09 09:43:14] [INFO] ============================================================
+[2026-03-09 09:43:14] [INFO] 已创建首帧 Canny 输入帧（线条颜色: (255, 255, 255)）
+[2026-03-09 09:43:14] [INFO] 执行推理...
+[2026-03-09 09:44:33] [INFO] 已保存原始模型输出视频: /home/hxiaoap/val_vace_superpod/experiments/results/1.3B/canny_paste/20260309_094232/canny_paste_white_raw.mp4
+[2026-03-09 09:44:33] [INFO] 已保存合成目标视频: /home/hxiaoap/val_vace_superpod/experiments/results/1.3B/canny_paste/20260309_094232/canny_paste_white.mp4
+[2026-03-09 09:44:33] [INFO] 已保存首末帧展示: /home/hxiaoap/val_vace_superpod/experiments/results/1.3B/canny_paste/20260309_094232/canny_paste_white_showcase.jpg
+[2026-03-09 09:44:33] [INFO] 变体 white 完成。
+[2026-03-09 09:44:33] [INFO] 
+[2026-03-09 09:44:33] [INFO] ============================================================
+[2026-03-09 09:44:33] [INFO] 变体：black
+[2026-03-09 09:44:33] [INFO] ============================================================
+[2026-03-09 09:44:33] [INFO] 已创建首帧 Canny 输入帧（线条颜色: (0, 0, 0)）
+[2026-03-09 09:44:33] [INFO] 执行推理...
+[2026-03-09 09:45:51] [INFO] 已保存原始模型输出视频: /home/hxiaoap/val_vace_superpod/experiments/results/1.3B/canny_paste/20260309_094232/canny_paste_black_raw.mp4
+[2026-03-09 09:45:52] [INFO] 已保存合成目标视频: /home/hxiaoap/val_vace_superpod/experiments/results/1.3B/canny_paste/20260309_094232/canny_paste_black.mp4
+[2026-03-09 09:45:52] [INFO] 已保存首末帧展示: /home/hxiaoap/val_vace_superpod/experiments/results/1.3B/canny_paste/20260309_094232/canny_paste_black_showcase.jpg
+[2026-03-09 09:45:52] [INFO] 变体 black 完成。
+[2026-03-09 09:45:52] [INFO] 已保存白/黑对比图（2×2 网格）: /home/hxiaoap/val_vace_superpod/experiments/results/1.3B/canny_paste/20260309_094232/canny_paste_comparison.jpg
+[2026-03-09 09:45:52] [INFO] 
+[2026-03-09 09:45:52] [INFO] ============================================================
+[2026-03-09 09:45:52] [INFO] 实验完成！白色/黑色两个变体均已执行。
+[2026-03-09 09:45:52] [INFO] 输出目录: /home/hxiaoap/val_vace_superpod/experiments/results/1.3B/canny_paste/20260309_094232
+[2026-03-09 09:45:52] [INFO] ============================================================

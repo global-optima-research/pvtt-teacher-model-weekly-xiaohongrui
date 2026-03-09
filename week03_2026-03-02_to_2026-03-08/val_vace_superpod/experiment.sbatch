@@ -89,7 +89,11 @@ SCRIPTS=(
     # "./scripts/run_neutral_fill.sh"
     # "./scripts/run_neutral_fill_bbox.sh"
     # "./scripts/run_neutral_fill_growmask.sh"
-    "./scripts/run_comfyui_baseline.sh"
+    # "./scripts/run_comfyui_baseline.sh"
+
+    # --- 第四轮实验（Canny 结构控制） ---
+    "./scripts/run_canny_control.sh"
+    "./scripts/run_canny_paste.sh"
 )
 
 # 修复 Windows 换行符（CRLF → LF），防止 bash 解析错误

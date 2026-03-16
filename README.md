@@ -57,7 +57,22 @@
 - [ ] 整理保持“主体一致性”技术调研路线
 
 #### 💻 代码工程类
-- [x] 继续探究 VACE 模型能力边界 | [Code & Log: 实验代码及实验记录](./week03_2026-03-02_to_2026-03-08/val_vace_superpod/)
+- [x] 继续探究 VACE 模型能力边界 | [Code & Log: 实验代码及实验记录](./week03_2026-03-02_to_2026-03-08/val_vace_superpod/experiment_report.md)
+
+#### 🧠 基础知识补全类
+
+
+### Week 4: 在 pvtt 数据集上验证 VACE 模型能力边界
+
+#### 🔬 核心技术调研类
+- [x] 阅读 First Frame Is the Place to Go for Video Content Customization 论文 [First Frame Is the Place to Go for Video Content Customization](https://arxiv.org/abs/2511.15700)  | [Note: FFGO 论文调研文档](./week04_2026-03-09_to_2026-03-15/ffgo_research_report.md)
+
+
+
+
+#### 💻 代码工程类
+- [x] 在 pvtt 数据集上验证 VACE 模型能力边界 | [Code & Log: 实验代码及实验记录](./week03_2026-03-02_to_2026-03-08/val_vace_superpod/pvtt_raw_output_experiment_report.md)
+- [x] 在 pvtt 数据集上测试 VACE 直接应用 FFGO 思路的效果  | [Code & Log: 实验代码及实验记录](./week03_2026-03-02_to_2026-03-08/val_vace_superpod/pvtt_ffgo_i2v_experiment_report.md)
 
 #### 🧠 基础知识补全类
 

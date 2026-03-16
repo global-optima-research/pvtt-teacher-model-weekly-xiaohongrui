@@ -92,8 +92,13 @@ SCRIPTS=(
     # "./scripts/run_comfyui_baseline.sh"
 
     # --- 第四轮实验（Canny 结构控制） ---
-    "./scripts/run_canny_control.sh"
-    "./scripts/run_canny_paste.sh"
+    # "./scripts/run_canny_control.sh"
+    # "./scripts/run_canny_paste.sh"
+
+    # --- 第五轮实验（PVTT 数据集评估） ---
+    # 注：PVTT 评估建议使用专用的 pvtt_evaluation.sbatch
+    # 若需在此处运行，取消下行注释（需先完成掩码提取）
+    # "./scripts/run_pvtt_canny_paste.sh"
 )
 
 # 修复 Windows 换行符（CRLF → LF），防止 bash 解析错误

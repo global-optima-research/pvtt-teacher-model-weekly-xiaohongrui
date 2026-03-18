@@ -86,7 +86,9 @@
 
 
 #### 💻 代码工程类
-- [x] 在 pvtt 数据集上测试 First Frame Is the Place to Go for Video Content Customization 论文的效果  | [Code & Log: 实验代码及实验记录](./week03_2026-03-02_to_2026-03-08/val_vace_superpod/pvtt_ffgo_original_experiment_report.md)
 
+- [x] 在 pvtt 数据集上测试 First Frame Is the Place to Go for Video Content Customization 论文的效果
+  * [Code & Log: 实验代码及实验记录](./week03_2026-03-02_to_2026-03-08/val_vace_superpod/pvtt_ffgo_original_experiment_report.md)
+  * [优化/创新方向分析](./week05-2026-3-16_to2026-3-22/pvtt_optimization_research_cn.md) 
 #### 🧠 基础知识补全类
 

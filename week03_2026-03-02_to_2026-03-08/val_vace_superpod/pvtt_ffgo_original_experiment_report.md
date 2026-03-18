@@ -160,7 +160,7 @@
 
 ---
 
-**0007-handbag2_to_handbag1**
+**0007-handbag2_to_handbag1** ⚠️ 产品一致性较差——提示词描述为"gray pebbled leather doctor bag with detachable shoulder strap"，与实际目标产品（handbag_1）不符，导致模型生成了提示词描述的包而非参考图中的包。
 
 | 原视频 | FFGo 输入首帧 | 生成视频 |
 |:---:|:---:|:---:|
@@ -264,7 +264,7 @@
 
 ---
 
-**0026-necklace1_to_necklace4**
+**0026-necklace1_to_necklace4** ⚠️ 产品一致性较差——提示词描述为"gold chain necklace with pearl drops and red flower charms"，对目标产品（necklace_4）的细节描述不够准确，模型未能还原产品的具体形态特征。
 
 | 原视频 | FFGo 输入首帧 | 生成视频 |
 |:---:|:---:|:---:|
@@ -396,7 +396,7 @@
 
 ---
 
-**0032-watch2_to_watch1**
+**0032-watch2_to_watch1** ⚠️ 产品一致性较差——提示词描述为"silver stainless steel link bracelet watch"，与目标产品（watch_1，实际是不同款式的手表）描述不准确，模型偏向生成了提示词描述的样式。
 
 | 原视频 | FFGo 输入首帧 | 生成视频 |
 |:---:|:---:|:---:|

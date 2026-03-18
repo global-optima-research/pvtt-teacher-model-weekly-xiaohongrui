@@ -59,7 +59,6 @@
 #### 💻 代码工程类
 - [x] 继续探究 VACE 模型能力边界 | [Code & Log: 实验代码及实验记录](./week03_2026-03-02_to_2026-03-08/val_vace_superpod/experiment_report.md)
 
-#### 🧠 基础知识补全类
 
 
 ### Week 4: 在 pvtt 数据集上验证 VACE 模型能力边界
@@ -74,8 +73,6 @@
 - [x] 在 pvtt 数据集上验证 VACE 模型能力边界 | [Code & Log: 实验代码及实验记录](./week03_2026-03-02_to_2026-03-08/val_vace_superpod/pvtt_raw_output_experiment_report.md)
 - [x] 在 pvtt 数据集上测试 VACE 直接应用 FFGO 思路的效果  | [Code & Log: 实验代码及实验记录](./week03_2026-03-02_to_2026-03-08/val_vace_superpod/pvtt_ffgo_i2v_experiment_report.md)
 
-#### 🧠 基础知识补全类
-
 
 ### Week 5
 
@@ -83,12 +80,11 @@
 
 
 
-
-
 #### 💻 代码工程类
 
 - [x] 在 pvtt 数据集上测试 First Frame Is the Place to Go for Video Content Customization 论文的效果
   * [Code & Log: 实验代码及实验记录](./week03_2026-03-02_to_2026-03-08/val_vace_superpod/pvtt_ffgo_original_experiment_report.md)
+  * [FFGO 转场帧可视化](./week05-2026-3-16_to2026-3-22/pvtt_ffgo_transition_frames.md)
   * [优化/创新方向分析](./week05-2026-3-16_to2026-3-22/pvtt_optimization_research_cn.md) 
-#### 🧠 基础知识补全类
+
 

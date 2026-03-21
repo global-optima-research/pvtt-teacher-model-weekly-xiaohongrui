@@ -86,5 +86,5 @@
   * [Code & Log: 实验代码及实验记录](./week03_2026-03-02_to_2026-03-08/val_vace_superpod/pvtt_ffgo_original_experiment_report.md)
   * [FFGO 转场帧可视化](./week05-2026-3-16_to2026-3-22/pvtt_ffgo_transition_frames.md)
   * [优化/创新方向分析](./week05-2026-3-16_to2026-3-22/pvtt_optimization_research_cn.md) 
-
+- [x] 训练数据集构建计划 [用于 Wan2.2 TI2V 5B + FFGO LoRA 微调的训练数据集](./week05-2026-3-16_to2026-3-22/dataset_construction_plan.md)
 

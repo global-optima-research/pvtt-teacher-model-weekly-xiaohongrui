@@ -78,7 +78,10 @@
 
 #### 🔬 核心技术调研类
 
-
+video editing
+- [x] 阅读 AnyV2V 论文 [AnyV2V: A Tuning-Free Framework For Any Video-to-Video Editing Tasks](https://arxiv.org/abs/2403.14468) | [Note: 调研文档-AnyV2V](./week05-2026-03-16_to_2026-03-22/调研文档-AnyV2V.md)
+- [x] 阅读 Omni-Video 论文 [Omni-Video: Democratizing Unified Video Understanding and Generation](https://arxiv.org/abs/2507.06119)
+- [x] 阅读 Omni-Video 2 论文 [Omni-Video 2: Scaling MLLM-Conditioned Diffusion for Unified Video Generation and Editing](https://arxiv.org/abs/2602.08820) | [Note: 调研文档-OmniVideo系列](./week05-2026-03-16_to_2026-03-22/调研文档-OmniVideo系列.md)
 
 #### 💻 代码工程类
 

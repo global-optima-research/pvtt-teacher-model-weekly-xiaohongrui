@@ -152,12 +152,67 @@ ad23r2 the camera view suddenly changes [描述内容]
     "sample_id": "sample_000",
     "product_name": "Thai Cotton Harem Pants",
     "scene_category": "A",
-    "resolution": [832, 480],
-    "num_frames": 81,
-    "fps": 16,
     "num_objects": 1,
-    "product_extraction_method": "grounding-dino+sam2",
-    "background_extraction_method": "[待定]"
+
+    "video": {
+        "file": "video.mp4",
+        "resolution": [832, 480],
+        "num_frames": 81,
+        "fps": 16,
+        "original_resolution": [352, 480],
+        "has_padding": true
+    },
+
+    "caption": {
+        "file": "caption.txt",
+        "full_text": "ad23r2 the camera view suddenly changes A woman models a pair of orange Thai Cotton Harem Pants, showcasing their loose fit and wide leg, against a scenic desert backdrop. The camera remains static, focusing on the pants as the woman shifts poses.",
+        "trigger_prefix": "ad23r2 the camera view suddenly changes",
+        "description_only": "A woman models a pair of orange Thai Cotton Harem Pants, showcasing their loose fit and wide leg, against a scenic desert backdrop. The camera remains static, focusing on the pants as the woman shifts poses.",
+        "generation_method": "gemini-2.5-pro"
+    },
+
+    "product_rgba": {
+        "file": "product_rgba.png",
+        "extraction_method": "grounding-dino+sam2",
+        "detection_prompt": "orange Thai Cotton Harem Pants",
+        "detection_confidence": 0.72,
+        "product_area_ratio": 0.18
+    },
+
+    "product_mask": {
+        "file": "product_mask.png",
+        "mask_type": "precise (SAM2)",
+        "format": "grayscale, 255=product, 0=background"
+    },
+
+    "background": {
+        "file": "background.png",
+        "extraction_method": "[待定]"
+    },
+
+    "first_frame_raw": {
+        "file": "first_frame_raw.png",
+        "note": "原视频首帧，已裁剪padding"
+    },
+
+    "first_frame": {
+        "file": "first_frame.png",
+        "canvas_size": [832, 480],
+        "canvas_color": [255, 255, 255],
+        "product_zone_ratio": 0.33,
+        "layout": "left=product_rgba, right=background"
+    },
+
+    "files": [
+        "first_frame.png",
+        "video.mp4",
+        "caption.txt",
+        "product_rgba.png",
+        "product_mask.png",
+        "first_frame_raw.png",
+        "background.png",
+        "metadata.json"
+    ]
 }
 ```
 
